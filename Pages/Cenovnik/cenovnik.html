@@ -12,7 +12,7 @@
     <!--  HEADER & NAVBAR  -->
     <header>
         <nav>
-            <a href="../../index.html" class="nav-link-style nav-logo"><img src="Resources/Logo/logo-white_25p.png" alt="LOGO"></a>
+            <a href="../../index.html" class="nav-link-style nav-logo"><img src="../../Resources/Logo/logo-white_25p.png" alt="LOGO"></a>
             <a href="../../index.html" class="nav-link-style nav-links">početna.</a>
             <a href="" class="nav-link-style nav-links">tretmani.</a>
             <a href="" class="nav-link-style nav-links">cenovnik.</a>
@@ -25,7 +25,8 @@
 
     <!--  LANDING  -->
     <div id="landing">
-        <h1>Lista popusta za <span id="popust-dan">ponedeljak</span>:</h1>
+        <h1>Lista popusta za <span id="popust-dan"></span>:</h1>
+        <h2>( Današnji popust iznosi: <span id="popust"></span>% )</h2>
     </div>
 
     <!--  PAGE BODY  -->
@@ -40,55 +41,55 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr id="tretman-1" class="popust-pon popust-pet">
                     <td class="table-naziv">Tretman 1</td>
                     <td class="table-cena"><span>1000</span> RSD</td>
-                    <td class="table-dugme"><input type="button" value="DODAJ"></td>
+                    <td class="table-dugme"><input type="button" value="DODAJ" onclick="ukupanIznos('#tretman-1 input', parseInt(document.querySelector('#tretman-1 span').innerHTML))"></td>
                 </tr>
-                <tr>
+                <tr id="tretman-2" class="popust-uto popust-sub">
                     <td class="table-naziv">Tretman 2</td>
-                    <td class="table-cena"><span>1000</span> RSD</td>
-                    <td class="table-dugme"><input type="button" value="DODAJ"></td>
+                    <td class="table-cena"><span>500</span> RSD</td>
+                    <td class="table-dugme"><input type="button" value="DODAJ" onclick="ukupanIznos('#tretman-2 input', parseInt(document.querySelector('#tretman-2 span').innerHTML))"></td>
                 </tr>
-                <tr>
+                <tr id="tretman-3" class="popust-pon">
                     <td class="table-naziv">Tretman 3</td>
-                    <td class="table-cena"><span>1000</span> RSD</td>
-                    <td class="table-dugme"><input type="button" value="DODAJ"></td>
+                    <td class="table-cena"><span>1750</span> RSD</td>
+                    <td class="table-dugme"><input type="button" value="DODAJ" onclick="ukupanIznos('#tretman-3 input', parseInt(document.querySelector('#tretman-3 span').innerHTML))"></td>
                 </tr>
-                <tr>
+                <tr id="tretman-4" class="popust-pon popust-sre popust-sub">
                     <td class="table-naziv">Tretman 4</td>
-                    <td class="table-cena"><span>1000</span> RSD</td>
-                    <td class="table-dugme"><input type="button" value="DODAJ"></td>
+                    <td class="table-cena"><span>3300</span> RSD</td>
+                    <td class="table-dugme"><input type="button" value="DODAJ" onclick="ukupanIznos('#tretman-4 input', parseInt(document.querySelector('#tretman-4 span').innerHTML))"></td>
                 </tr>
-                <tr>
+                <tr id="tretman-5" class="popust-uto popust-pet">
                     <td class="table-naziv">Tretman 5</td>
-                    <td class="table-cena"><span>1000</span> RSD</td>
-                    <td class="table-dugme"><input type="button" value="DODAJ"></td>
+                    <td class="table-cena"><span>1250</span> RSD</td>
+                    <td class="table-dugme"><input type="button" value="DODAJ" onclick="ukupanIznos('#tretman-5 input', parseInt(document.querySelector('#tretman-5 span').innerHTML))"></td>
                 </tr>
-                <tr>
+                <tr id="tretman-6" class="popust-uto">
                     <td class="table-naziv">Tretman 6</td>
-                    <td class="table-cena"><span>1000</span> RSD</td>
-                    <td class="table-dugme"><input type="button" value="DODAJ"></td>
+                    <td class="table-cena"><span>2550</span> RSD</td>
+                    <td class="table-dugme"><input type="button" value="DODAJ" onclick="ukupanIznos('#tretman-6 input', parseInt(document.querySelector('#tretman-6 span').innerHTML))"></td>
                 </tr>
-                <tr>
+                <tr id="tretman-7" class="popust-sre popust-sub">
                     <td class="table-naziv">Tretman 7</td>
-                    <td class="table-cena"><span>1000</span> RSD</td>
-                    <td class="table-dugme"><input type="button" value="DODAJ"></td>
+                    <td class="table-cena"><span>4800</span> RSD</td>
+                    <td class="table-dugme"><input type="button" value="DODAJ" onclick="ukupanIznos('#tretman-7 input', parseInt(document.querySelector('#tretman-7 span').innerHTML))"></td>
                 </tr>
-                <tr>
+                <tr id="tretman-8" class="popust-cet popust-pet">
                     <td class="table-naziv">Tretman 8</td>
-                    <td class="table-cena"><span>1000</span> RSD</td>
-                    <td class="table-dugme"><input type="button" value="DODAJ"></td>
+                    <td class="table-cena"><span>6000</span> RSD</td>
+                    <td class="table-dugme"><input type="button" value="DODAJ" onclick="ukupanIznos('#tretman-8 input', parseInt(document.querySelector('#tretman-8 span').innerHTML))"></td>
                 </tr>
-                <tr>
+                <tr id="tretman-9" class="popust-sre popust-pet">
                     <td class="table-naziv">Tretman 9</td>
-                    <td class="table-cena"><span>1000</span> RSD</td>
-                    <td class="table-dugme"><input type="button" value="DODAJ"></td>
+                    <td class="table-cena"><span>7500</span> RSD</td>
+                    <td class="table-dugme"><input type="button" value="DODAJ" onclick="ukupanIznos('#tretman-9 input', parseInt(document.querySelector('#tretman-9 span').innerHTML))"></td>
                 </tr>
-                <tr>
+                <tr id="tretman-10" class="popust-sub">
                     <td class="table-naziv">Tretman 10</td>
-                    <td class="table-cena"><span>1000</span> RSD</td>
-                    <td class="table-dugme"><input type="button" value="DODAJ"></td>
+                    <td class="table-cena"><span>12000</span> RSD</td>
+                    <td class="table-dugme"><input type="button" value="DODAJ" onclick="ukupanIznos('#tretman-10 input', parseInt(document.querySelector('#tretman-10 span').innerHTML))"></td>
                 </tr>
             </tbody>
         </table>
@@ -110,6 +111,7 @@
         </footer>
     </div>
 
+    <script src="cenovnik.js"></script>
     <script src="../../Styles&Script/main.js"></script>
 </body>
 </html>
