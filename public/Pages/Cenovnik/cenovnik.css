@@ -62,6 +62,7 @@ table {
 .table-dugme input:hover, .table-dugme_CLICKED {
     background-color: var(--color-dark);
     color: var(--color-light);
+    transition: background-color 0.66s;
 }
 
 table tr:nth-of-type(even) {
