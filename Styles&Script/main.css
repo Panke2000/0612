@@ -1,5 +1,5 @@
 :root {
-    --color-dark: #051937;
+    --color-dark: rgb(5, 25, 55); /* #051937 */
     --color-light: #eff3fa;
     --color-contrast: #ffd369;
     --width-content: 80vw;

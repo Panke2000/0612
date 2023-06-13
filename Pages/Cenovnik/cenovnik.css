@@ -1,0 +1,70 @@
+#landing {
+    min-height: 350px;
+    margin-inline: auto;
+    padding-top: calc(var(--height-header) + 50px);
+    padding-bottom: 35px;
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    background-color: var(--color-dark);
+    background-image: url('../../Resources/Images/Cenovnik/Salon-Accessories.png');
+    background-size: 250px;
+    background-blend-mode: overlay;
+}
+
+#landing p {
+    margin-top: 15px;
+}
+
+#page-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    display: block;
+    margin: 50px 0;
+    color: black;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 25px;
+    overflow: hidden;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+.table-naziv {
+    width: 40vw;
+    padding-left: 25px;
+}
+.table-cena {
+    width: 15vw;
+    padding-right: 25px;
+    text-align: right;
+}
+.table-dugme {
+    width: 5vw;
+    text-align: center;
+}
+.table-dugme input {
+    cursor: pointer;
+    min-width: 75px;
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--color-contrast);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25);
+}
+
+table tr:nth-of-type(even) {
+    background-color: rgba(5, 25, 55, 0.25);
+
+}
+.table-naziv:last-of-type {
+    border-bottom-left-radius: 25px;
+}
+.table-dugme:last-of-type {
+    border-bottom-right-radius: 25px;
+}
+table tr td {
+    padding: 5px;
+}
