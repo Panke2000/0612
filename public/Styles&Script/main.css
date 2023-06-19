@@ -120,11 +120,51 @@ section {
     z-index: 1;
     top: 100px;
     display: inherit;
-    min-height: 550px;
+    height: 550px;
     min-width: var(--width-content);
     border-radius: 50px;
     box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.75);
     background-color: var(--color-dark);
+}
+
+#k-box-media {
+    display: flex;
+    justify-content: center;
+    height: 33%;
+}
+#k-box-media img {
+    width: 80px;
+    margin: 0 5%;
+}
+
+#k-box-tel, #k-box-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 33%;
+    font-size: 2rem;
+    color: var(--color-light);
+}
+#k-box-tel a, #k-box-email a {
+    margin-top: 10px;
+    color: var(--color-contrast);
+}
+
+#k-box-tel {
+    height: 33%;
+}
+
+.kontakt-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+}
+.kontakt-box iframe{
+    width: 80%;
+    height: 80%;
 }
 
 footer {
@@ -142,6 +182,19 @@ footer {
     /* PAGE BODY */
 
     /* KONTAKT & FOOTER */
+    #kontakt-content {
+        flex-direction: column;
+    }
+    .kontakt-box {
+        width: 100%;
+        height: 49%;
+    }
+    #k-box-media img {
+        width: 50px;
+    }
+    #k-box-tel, #k-box-email {
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+    }
 }
 
 .hidden {
