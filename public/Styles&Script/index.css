@@ -46,12 +46,13 @@ section input {
 #index-prvi-section input {
     z-index: 1;
     position: relative;
+    left: 33px;
     top: 100px;
 }
 #index-prvi-section input:nth-of-type(2){
     margin-top: 10px;
 }
-#index-prvi-section input:hover {
+#index-prvi-section input:hover,  #index-drugi-section input:hover{
     background-color: var(--color-dark);
     color: var(--color-light);
 }
@@ -120,6 +121,9 @@ section input {
         width: 500px;
         height: auto;
     }
+    #index-prvi-section img {
+        bottom: -6px;
+    }
     #index-treci-section img  {
         width: 150px;
         height: 150px;
@@ -127,6 +131,9 @@ section input {
 }
 
 @media only screen and (max-width: 500px) {
+    #index-prvi-section input {
+        left: 0px;
+    }
     #index-treci-section img  {
         width: 100px;
         height: 100px;

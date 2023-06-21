@@ -130,11 +130,18 @@ section {
 #k-box-media {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 33%;
 }
-#k-box-media img {
-    width: 80px;
-    margin: 0 5%;
+#k-box-media a{
+    width: 100px;
+    height: 70px;
+    margin: 0 5px;
+}
+#k-box-media a > img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 #k-box-tel, #k-box-email {
@@ -189,8 +196,13 @@ footer {
         width: 100%;
         height: 49%;
     }
-    #k-box-media img {
+    #k-box-media a {
         width: 50px;
+        height: 50px;
+    }
+    #k-box-media a > img{
+        width: 100%;
+        height: 100%;
     }
     #k-box-tel, #k-box-email {
         font-size: clamp(1rem, 2.5vw, 1.5rem);
