@@ -14,4 +14,14 @@ window.addEventListener("scroll", function() {
 
   });
 
+/* MENI */
+let aktivan = false;
+function prikaziMeni() {
+    if (aktivan) {
+        
+    }
+
+
+}
+
   
