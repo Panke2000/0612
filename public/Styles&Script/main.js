@@ -14,14 +14,34 @@ window.addEventListener("scroll", function() {
 
   });
 
-/* MENI */
-let aktivan = false;
-function prikaziMeni() {
-    if (aktivan) {
-        
-    }
+/* MENU TOGGLER */
+const menu = document.querySelector('.menu');
+const zavesa = document.querySelector('.zavesa');
+let active = false;
+function menuToggler() {
+    console.log('click');
 
+    if (active === false) {
+        menu.classList.remove('hidden');
+        zavesa.classList.remove('hidden');
+        document.body.classList.add("stop-scrolling");
+        active = true;
+    } else {
+        menu.classList.add('hidden');
+        zavesa.classList.add('hidden');
+        document.body.classList.remove("stop-scrolling");
+        active = false;
+    }
 
 }
 
+/* CLOSE MENU */
+function closeMenu() {
+    if (active === true) {
+        menu.classList.add('hidden');
+        zavesa.classList.add('hidden');
+        document.body.classList.remove("stop-scrolling");
+        active = false;
+    }
+}
   

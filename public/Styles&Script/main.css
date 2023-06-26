@@ -26,22 +26,15 @@ body {
 
 header {
     position: fixed;
-    z-index: 99;
+    z-index: 90;
     top: 0;
     width: 100%;
     height: var(--height-header);
     background-color: none;
     transition: background-color ease-out 0.25s;
 }
-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    width: 100%;
-}
 
-#nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,17 +77,32 @@ nav {
 
 .nav-menu {
     display: none;
+    cursor: pointer;
 }
 
 /* MENI */
-#meni {
+.menu {
+    position: fixed;
+    z-index: 99;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--color-dark);
     width: 100%;
-    height: 500px;
+    height: 50vh;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+
+}
+.zavesa {
+    position: fixed;
+    z-index: 98;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    opacity: 75%;
 }
 
 /* PAGE BODY */
@@ -236,4 +244,9 @@ footer {
 
 .header-bg{
     background-color: var(--color-dark);
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }
